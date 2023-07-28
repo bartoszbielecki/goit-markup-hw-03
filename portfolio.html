@@ -10,9 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Homework 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Homework 3</title>
   </head>
-    <header id="navbar">
+    <header id="navbar" class="container">
       <nav>
         <a href="index.html" class="logo"
           ><span class="logo-span">Web</span>studio</a
@@ -23,7 +24,7 @@
           <li><a href="#" class="link-menu">Contacts</a></li>
         </menu>
       </nav>
-      <ul>
+      <ul id="contact-list">
         <li>
           <a href="mailto:info@devstudio.com" class="link-contact"
             >info@devstudio.com</a
@@ -36,16 +37,16 @@
         </li>
       </ul>
     </header>
-    <main>
-      <div id="projects">
-        <ul>
+    <main class="container">
+      <div id="projects" class="section">
+        <ul id="filter-btn-group">
           <li><button type="button" class="filter-btn">All</button></li>
           <li><button type="button" class="filter-btn">Web Site</button></li>
           <li><button type="button" class="filter-btn">App</button></li>
           <li><button type="button" class="filter-btn">Design</button></li>
           <li><button type="button" class="filter-btn">Marketing</button></li>
         </ul>
-        <ul>
+        <ul id="projects-group">
           <li>
             <figure class="project-card">
               <img
@@ -166,7 +167,7 @@
                 width="360"
                 height="300"
               />
-              <figcaption>
+              <figcaption class="project-card-info">
                 <h3 class="project-title">Fresh Coffee</h3>
                 <p class="filter">Web Site</p>
               </figcaption>
@@ -175,7 +176,7 @@
         </ul>
       </div>
     </main>
-    <footer id="footer">
+    <footer id="footer" class="section container">
       <a href="index.html" class="logo-footer"
         ><span class="logo-span">Web</span>studio</a
       >

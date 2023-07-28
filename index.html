@@ -10,10 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Homework 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Homework 3</title>
   </head>
   <body>
-    <header id="navbar">
+    <header id="navbar" class="container">
       <nav>
         <a href="index.html" class="logo"
           ><span class="logo-span">Web</span>studio</a
@@ -24,7 +31,7 @@
           <li><a href="#" class="link-menu">Contacts</a></li>
         </menu>
       </nav>
-      <ul>
+      <ul id="contact-list">
         <li>
           <a href="mailto:info@devstudio.com" class="link-contact"
             >info@devstudio.com</a
@@ -38,12 +45,12 @@
       </ul>
     </header>
     <main>
-      <div id="hero">
+      <div id="hero" class="section">
         <h1 class="hero-header">Effective Solutions for Your Business</h1>
         <button type="button" class="hero-btn">Order Service</button>
       </div>
       <div>
-        <ul>
+        <ul class="features-group">
           <li>
             <h3 class="features-title">Strategy</h3>
             <p class="features-info">
@@ -74,7 +81,7 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div class="section">
         <h2 class="section-heading">What Are We Doing</h2>
         <ul>
           <li>
@@ -106,9 +113,9 @@
           </li>
         </ul>
       </div>
-      <div id="team">
+      <div id="team" class="section">
         <h2 class="section-heading">Our Team</h2>
-        <ul>
+        <ul class="team-members-group">
           <li>
             <figure>
               <img
@@ -168,7 +175,7 @@
         </ul>
       </div>
     </main>
-    <footer id="footer">
+    <footer id="footer" class="section container">
       <a href="index.html" class="logo-footer"
         ><span class="logo-span">Web</span>studio</a
       >
