@@ -22,6 +22,16 @@ body {
   line-height: 1.2;
 }
 
+main {
+  text-align: center;
+}
+
+img {
+  display: block;
+}
+
+/* SEKCJE */
+
 .container {
   width: 1158px;
   margin: auto;
@@ -31,6 +41,24 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+.section-heading {
+  line-height: 1.2;
+  color: var(--color-navy-blue);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.team-member-name,
+.features-title,
+.project-title {
+  line-height: 1.2;
+  color: var(--color-navy-blue);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* PASEK MENU */
 
 #navbar {
   display: inline-flex;
@@ -50,6 +78,8 @@ menu {
   gap: 40px;
 }
 
+/* LOGO */
+
 .logo {
   text-decoration: none;
   text-transform: uppercase;
@@ -58,6 +88,12 @@ menu {
   font-size: 18px;
   font-weight: 700;
 }
+
+.logo-span {
+  color: var(--color-iris);
+}
+
+/* LINKI MENU */
 
 .link-menu {
   color: var(--color-navy-blue);
@@ -89,8 +125,20 @@ menu {
   color: var(--color-ocean);
 }
 
-.filter {
-  color: var(--color-slate);
+/* STOPKA */
+
+#footer {
+  background-color: #2e2f42;
+  width: 100%;
+}
+
+.footer-info {
+  line-height: 150%;
+  color: var(--color-cloud);
+  font-weight: 400;
+  width: 264px;
+  margin-left: 0;
+  margin-top: 17.5px;
 }
 
 .logo-footer {
@@ -101,12 +149,11 @@ menu {
   font-size: 18px;
 }
 
-.logo-span {
-  color: var(--color-iris);
-}
+/* index.html - SEKCJA 1 */
 
 #hero {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .hero-header {
@@ -116,6 +163,7 @@ menu {
   font-weight: 700;
   font-size: 56px;
   text-align: center;
+  width: 496px;
 }
 
 .hero-btn {
@@ -128,6 +176,8 @@ menu {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
+  display: block;
+  margin: 48px auto 0;
 }
 
 .hero-btn:hover,
@@ -138,6 +188,70 @@ menu {
   cursor: pointer;
   font-size: 16px;
 }
+/* index.html - SEKCJA 2 (FEATURES) */
+
+#features-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  list-style: none;
+  text-align: left;
+  margin-bottom: -120px;
+}
+
+/* index.html - SEKCJA 3 */
+
+#studio-projects-group {
+  padding: 72px 0 0;
+  display: flex;
+  flex-basis: auto;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+#studio-projects-group li {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+/* index.html - SEKCJA 4 (TEAM) */
+
+#team {
+  background-color: var(--color-cloud);
+}
+
+.team-members-group {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin-top: 72px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.team-member {
+  background-color: var(--color-white);
+  padding: 32px 16px;
+  margin: 0;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-member-info,
+.features-info {
+  color: var(--color-slate);
+  line-height: 1.2;
+  padding: 8px 0 0;
+}
+
+/* portfolio.html - SEKCJA 1 (FILTRY) */
 
 #filter-btn-group {
   display: inline-flex;
@@ -166,85 +280,38 @@ menu {
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+/* portfolio.html - SEKCJA 1 (LISTA PROJEKTÓW) */
+
 #projects-group {
   display: flex;
-  flex-basis: auto;
-  gap: 24px;
   flex-wrap: wrap;
   list-style: none;
+  padding: 0;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 #projects-group li {
-  gap: 10px;
-  flex-basis: calc((100% - 20px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .project-card {
-  padding: 48px 24px;
+  padding: 0;
 }
 
 .project-card img {
   display: block;
 }
 
-/*
-.work-img {
-}
-*/
-
 .project-card-info {
-  border-width: 1px;
+  border-color: var(--color-cornflower);
+  border-width: 0 1px 1px;
+  border-style: solid;
+  padding: 32px 16px;
+  text-align: left;
+  max-width: 360px;
 }
 
-.section-heading {
-  line-height: 1.2;
-  color: var(--color-navy-blue);
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.team-member-name,
-.features-title,
-.project-title {
-  line-height: 1.2;
-  color: var(--color-navy-blue);
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.team-member {
-  background-color: var(--color-white);
-}
-
-.team-member-info,
-.features-info {
+.filter {
   color: var(--color-slate);
-  line-height: 1.2;
-}
-
-.features-group {
-  display: inline-flex;
-  gap: 24px;
-  list-style: none;
-}
-
-.team-members-group {
-  display: inline-flex;
-  gap: 24px;
-  list-style: none;
-}
-
-#team {
-  background-color: var(--color-cloud);
-}
-
-#footer {
-  background-color: #2e2f42;
-  width: 100%;
-}
-
-.footer-info {
-  line-height: 150%;
-  color: var(--color-cloud);
-  font-weight: 400;
 }
