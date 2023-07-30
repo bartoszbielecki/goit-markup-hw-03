@@ -34,7 +34,8 @@ img {
 
 .container {
   width: 1158px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
@@ -61,18 +62,27 @@ img {
 /* PASEK MENU */
 
 #navbar {
-  display: inline-flex;
   border-bottom: 1px solid var(--color-cornflower);
   width: 100%;
 }
 
 #navbar nav {
-  display: inline-flex;
   padding-top: 24px;
   padding-bottom: 24px;
+  margin: 0;
 }
 
-menu {
+.navigation-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
   display: inline-flex;
   list-style: none;
   gap: 40px;
@@ -87,6 +97,7 @@ menu {
   font-family: var(--font-logo);
   font-size: 18px;
   font-weight: 700;
+  margin-right: 76px;
 }
 
 .logo-span {
@@ -111,6 +122,8 @@ menu {
   display: inline-flex;
   list-style: none;
   gap: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .link-contact {
