@@ -74,6 +74,7 @@ img {
 .nav-menu {
   display: flex;
   gap: 40px;
+  padding: 0;
 }
 
 .nav-menu-item {
@@ -111,8 +112,12 @@ img {
   color: #404bbf;
 }
 
+.contact-section {
+  margin-right: 0;
+}
+
 .contact-list {
-  display: inline-flex;
+  display: flex;
   font-style: normal;
   list-style: none;
   gap: 40px;
