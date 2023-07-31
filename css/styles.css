@@ -58,8 +58,6 @@ img {
 }
 
 .navbar nav {
-  padding-top: 24px;
-  padding-bottom: 24px;
   margin: 0;
 }
 
@@ -74,9 +72,13 @@ img {
 }
 
 .nav-menu {
-  display: inline-flex;
-  list-style: none;
+  display: flex;
   gap: 40px;
+}
+
+.nav-menu-item {
+  list-style: none;
+  padding: 24px 0;
 }
 
 /* LOGO */
@@ -109,8 +111,9 @@ img {
   color: #404bbf;
 }
 
-#contact-list {
+.contact-list {
   display: inline-flex;
+  font-style: normal;
   list-style: none;
   gap: 40px;
   margin: 0;
@@ -211,7 +214,7 @@ img {
 }
 
 .features-item {
-  flex-basis: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .features-title {
